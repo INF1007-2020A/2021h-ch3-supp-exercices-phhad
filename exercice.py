@@ -38,7 +38,6 @@ def bills(value):
 	twenties = 0
 	tens = 0
 	fives = 0
-	twos = 0
 	ones = 0
 	while value != 0:
 		if value >= 20:
@@ -50,15 +49,12 @@ def bills(value):
 		elif value >= 5:
 			fives = value // 5
 			value = value - (fives * 5)
-		elif value >= 2:
-			twos = value // 2
-			value = value - (twos * 2)
 		elif value >= 1:
 			ones = value // 1
 			value = value - (ones * 1)
 
 
-	return (twenties, tens, fives, twos, ones);
+	return (twenties, tens, fives, ones);
 
 if __name__ == "__main__":
 	print(dissipated_power(69, 420))
