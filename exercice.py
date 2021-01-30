@@ -3,7 +3,7 @@
 
 def dissipated_power(voltage, resistance):
 	# TODO: Calculer la puissance dissipée par la résistance.
-	puissance = (voltage ** 2)/resistance
+	puissance = (voltage * voltage)/resistance
 	return puissance
 
 def orthogonal(v1, v2):
